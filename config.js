@@ -8,18 +8,18 @@ function mapPresence(val) {
         paused: 'paused',
         offline: 'unavailable'
     };
-    return mapping[val?.toLowerCase()?.trim()] || 'paused';
+    return mapping[val?.toLowerCase()?.trim()] || 'available';
 }
 
 module.exports = {
     prefixes: process.env.PREFIX
         ? process.env.PREFIX.split(',').map(p => p.trim())
-        : [''],
+        : ['#'],
 
     NUMBER: process.env.YOUR_NUMBER || '94763952882',
     MODE: (process.env.MODE || 'private').toLowerCase().trim(),
     WARN_LIMIT: process.env.WARNINGS || '3',
-    ON: process.env.YOUR_NAME || 'FLASH-MD',
+    ON: process.env.YOUR_NAME || 'Sahan Dissanayaka',
     ANTICALL: process.env.ANTICALL || 'off',
     ADM: process.env.ANTIDELETE || 'on',
     AR: process.env.AUTO_REACTION || 'off',
