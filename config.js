@@ -34,8 +34,8 @@ module.exports = {
 
     USER_LID: process.env.YOUR_LID, 
 
-    PRESENCE_DM: mapPresence(process.env.PRESENCE_DM || 'online'),
-    PRESENCE_GROUP: mapPresence(process.env.PRESENCE_GROUP || 'online'),
+    PRESENCE_DM: mapPresence(process.env.PRESENCE_DM || 'available'),
+    PRESENCE_GROUP: mapPresence(process.env.PRESENCE_GROUP || 'available'),
 
     mapPresence
 };
